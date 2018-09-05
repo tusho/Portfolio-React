@@ -1,17 +1,24 @@
 import React, { Component } from 'react'
 import sortBy from 'sort-by'
-import alift from './img/alift.jpg'
+
+const websiteData = [
+    { websiteURL: 'https://github.com/tusho', image: 'alift', name: 'A-Lift' },
+    { websiteURL: 'https://hackerfirm.com', image: 'hackerfirm', name: 'Hacker Firm' },
+    { websiteURL: 'https://json.capital', image: 'json', name: 'JSON Capital' }
+];
 
 class MyWebsites extends Component {
   render() {
     return (
       <div className="work">
-        <h2 class="work_header">Featured Work</h2>
-        <section className="projects">
-          <img src={alift} className="project_image" alt="alift" />
-          <h3 className="project_name">A-Lift</h3>
-          <a className="project_links" href="https://github.com/tusho" target="_blank">https://github.com/tusho</a>
-        </section>
+        <h2 class="work_header">My Websites</h2>
+        {websiteData.map(website => (
+          <section className="projects">
+            <img src={require(`./img/${website.image}.jpg`)} className="project_image" />
+            <h3 className="project_name">{website.name}</h3>
+            <a className="project_links" href={website.websiteURL} target="_blank">{website.websiteURL}</a>
+          </section>
+        ))}
       </div>
     )
   }
