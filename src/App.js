@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import MyWebsites from './MyWebsites';
 import './App.css';
+import logo from './img/logo.png'
+import heroSmall from './img/desksmall.jpg'
+import heroLarge from './img/desklarge.jpg'
 
 class App extends Component {
   render() {
@@ -7,7 +11,7 @@ class App extends Component {
       <div className="app">
         <div className="header">
           <div className="header_inner">
-            <img className="header_logo" src={ require("./img/logo.png") }/>
+            <img src={logo} className="header_logo" alt="logo" />
             <section className="header_title">
               <h1 className="title_name">Armin Kuhestani</h1>
               <h2 className="title_pitch">Carefully Crafted Code</h2>
@@ -16,9 +20,10 @@ class App extends Component {
         </div>
         <hr />
         <div className="hero">
-          <img className="hero_image_small" src={ require("./img/desksmall.jpg") }/>
-          <img className="hero_image_large" src={ require("./img/desklarge.jpg") }/>
+          <img src={heroSmall} className="hero_image_small" alt="desk-image-small" />
+          <img src={heroLarge} className="hero_image_large" alt="desk-image-large" />
         </div>
+        <MyWebsites />
       </div>
 
     );
