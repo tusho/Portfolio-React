@@ -19,6 +19,10 @@ body {
   box-sizing: border-box;
 }
 
+.hero {
+  margin-bottom: 10px;
+}
+
 h1, h2, h3, p {
   margin: 0;
   padding: 0;
@@ -85,6 +89,8 @@ hr {
   border: 1px solid #D3D3D3;
 }
 
+
+
 .project_links {
   text-decoration: none;
   color: #2d3c49;
@@ -100,6 +106,57 @@ p {
   font-size: 10px;
 }
 
+
+/* CSS Logo animation */
+
+.rotateIn {
+ animation-name: rotateIn;
+ -webkit-animation-name: rotateIn;
+
+ animation-duration: 3s;
+ -webkit-animation-duration: 3s;
+
+ animation-timing-function: ease;
+ -webkit-animation-timing-function: ease;
+
+ -webkit-animation-iteration-count: 1;
+ animation-iteration-count: 1;
+
+ -webkit-transform-origin: center;
+ transform-origin: center;
+
+}
+
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -720deg);
+    transform: rotate3d(0, 0, 1, -720deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, -720deg);
+    transform: rotate3d(0, 0, 1, -720deg);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
 
 /* Code to add responsiveness */
 
@@ -124,7 +181,6 @@ p {
 
   .work_header {
     font-size: 20px;
-    color: #7d97ad;
     padding: 0 0 0.2em 1.55em;
   }
 

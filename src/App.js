@@ -12,7 +12,7 @@ class App extends Component {
       <div className="app">
         <div className="header">
           <div className="header_inner">
-            <img src={logo} className="header_logo" alt="logo" />
+            <img src={logo} className="header_logo rotateIn" alt="logo" />
             <section className="header_title">
               <h1 className="title_name">Armin Kuhestani</h1>
               <h2 className="title_pitch">Carefully Crafted Code</h2>
