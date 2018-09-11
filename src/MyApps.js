@@ -9,19 +9,15 @@ class MyWebsites extends Component {
 
   render() {
     const websiteData = [
-        { websiteURL: 'https://integratednaturalsolutions.com', image: 'integratednaturalsolutions', name: 'INS Global' },
-        { websiteURL: 'https://json.capital', image: 'json', name: 'JSON Capital' },
-        { websiteURL: 'https://inatureskincare.com', image: 'inatureskincare', name: 'iNature Skincare' },
-        { websiteURL: 'https://lucaspapawdistributor.com', image: 'lucaspapaw', name: 'Lucas Papaw' },
-        { websiteURL: 'https://ad-roller.com', image: 'adrollerau', name: 'Ad-Roller' }
-
+        { websiteURL: 'https://tusho.github.io/Memory-Game/index.html', image: 'memorygame', name: 'Memory - A Card Matching Game' },
+        { websiteURL: 'https://tusho.github.io/Arcade-Game/index.html', image: 'arcadegame', name: 'Acarde Game - Based on Frogger' }
     ];
 
     websiteData.sort(sortBy('website.name'))
 
     return (
       <div className="work">
-        <h2 className="work_header">My Websites</h2>
+        <h2 className="work_header">My Apps</h2>
         {websiteData.map(website => (
           <section className="projects">
             <a href={website.websiteURL} target="_blank">
