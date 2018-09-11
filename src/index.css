@@ -76,11 +76,13 @@ hr {
 
 .projects {
   padding: 0 2em;
+
 }
 
 
 .project_image {
   width: 100%;
+  border: 1px solid #D3D3D3;
 }
 
 .project_links {
@@ -185,14 +187,14 @@ p {
 
   .projects {
     width: calc((100% - 2em) / 3);
-    padding: 0;
+    padding: 0 0 1em 0;
     }
 
   .projects:first-of-type {
     margin-right: 1em;
   }
 
-  .projects:last-of-type {
+  .projects:nth-of-type(3) {
     margin-left: 1em;
   }
 
