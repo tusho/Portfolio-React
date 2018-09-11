@@ -13,13 +13,13 @@ class MyWebsites extends Component {
         { websiteURL: 'https://tusho.github.io/Arcade-Game/index.html', image: 'arcadegame', name: 'Acarde Game - Based on Frogger' }
     ];
 
-    websiteData.sort(sortBy('website.name'))
+    websiteData.sort(sortBy('name'))
 
     return (
       <div className="work">
         <h2 className="work_header">My Apps</h2>
         {websiteData.map(website => (
-          <section className="projects">
+          <section className="projects" key={website.name}>
             <a href={website.websiteURL} target="_blank">
               <img src={require(`./img/${website.image}.jpg`)} className="project_image"/>
             </a>
