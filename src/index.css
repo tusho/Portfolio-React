@@ -13,7 +13,7 @@ body {
   font-size: 16px;
 }
 
-/* Code for the Header aka Section 1 */
+/* Code for the Header */
 
 .header, .hero, .work {
   box-sizing: border-box;
@@ -58,13 +58,13 @@ hr {
     opacity: 0.5;
 }
 
-/* Code for the Image aka Section 2 */
+/* Code for the Image */
 
 .hero_image_small, .hero_image_large {
   width: 100%;
 }
 
-/* Code for the Work Portfolio aka Section 3 */
+/* Code for the Work Portfolio */
 
 .work {
   display: flex;
@@ -97,11 +97,24 @@ hr {
   text-decoration: none;
   color: #2d3c49;
   font-size: 13px;
+  display: none;
 }
 
 .footer {
-  margin: 1em 0.5em 0.5em 0;
-  text-align: right;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.footer-link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #D3D3D3;
+  display: inline-block;
+  margin: 5%;
+}
+
+.footer-link:hover {
+  color: #02b3e4;
 }
 
 p {
@@ -199,10 +212,6 @@ p {
     font-weight: 400;
   }
 
-  .project_links {
-    font-size: 12px;
-  }
-
 }
 
 
@@ -271,5 +280,9 @@ p {
 
   .work {
     padding: 8px 0 2px 0;
+  }
+
+  .project_links {
+    display: block;
   }
 }
