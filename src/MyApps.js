@@ -9,15 +9,15 @@ class MyWebsites extends Component {
 
   render() {
     const websiteData = [
-        { websiteURL: 'https://tusho.github.io/Memory-Game/index.html', image: 'memorygame', name: 'Memory - A Card Matching Game' },
-        { websiteURL: 'https://tusho.github.io/Arcade-Game/index.html', image: 'arcadegame', name: 'Acarde Game - Based on Frogger' }
+        { websiteURL: 'https://tusho.github.io/Memory-Game/index.html', image: 'memorygame', name: 'Memory Game' },
+        { websiteURL: 'https://tusho.github.io/Arcade-Game/index.html', image: 'arcadegame', name: 'Frogger Arcade Game' }
     ];
 
     websiteData.sort(sortBy('name'))
 
     return (
       <div className="work">
-        <h2 className="work_header">My Apps</h2>
+        <h2 className="work_header">My Apps<hr class="project_divider"/></h2>
         {websiteData.map(website => (
           <section className="projects" key={website.name}>
             <a href={website.websiteURL} target="_blank">
