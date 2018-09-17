@@ -26,3 +26,20 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.footer {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.footer-link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #D3D3D3;
+  display: inline-block;
+  margin: 5%;
+}
+
+.footer-link:hover {
+  color: #02b3e4;
+}

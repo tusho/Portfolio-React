@@ -26,6 +26,20 @@ class App extends Component {
         </div>
         <MyWebsites />
         <MyApps />
+        <div className="footer">
+          <a href="https://www.linkedin.com/in/kuhestani" target="_blank" className="footer-link">
+            <h3>Linkedin</h3>
+          </a>
+          <a href="https://www.github.com/tusho" target="_blank" className="footer-link">
+            <h3>Github</h3>
+          </a>
+          <a href="mailto:armin.kuhestani@gmail.com" target="_blank" className="footer-link">
+            <h3>Contact</h3>
+          </a>
+          <a href="#top" className="footer-link">
+            <h3>Back to Top</h3>
+          </a>
+        </div>
       </div>
 
     );

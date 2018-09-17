@@ -17,7 +17,7 @@ class MyWebsites extends Component {
 
     return (
       <div className="work">
-        <h2 className="work_header">My Apps<hr class="project_divider"/></h2>
+        <h2 className="work_header">My Apps<hr className="project_divider"/></h2>
         {websiteData.map(website => (
           <section className="projects" key={website.name}>
             <a href={website.websiteURL} target="_blank">
