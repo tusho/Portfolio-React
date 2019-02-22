@@ -21,7 +21,7 @@ class MyWebsites extends Component {
         {websiteData.map(website => (
           <section className="projects" key={website.name}>
             <a href={website.websiteURL} target="_blank">
-              <img src={require(`./img/${website.image}.jpg`)} className="project_image"/>
+              <img src={require(`../../img/${website.image}.jpg`)} className="project_image"/>
             </a>
             <h3 className="project_name">{website.name}</h3>
             <a className="project_links" href={website.websiteURL} target="_blank">{website.websiteURL}</a>

@@ -273,11 +273,6 @@ p {
     margin: auto;
   }
 
-  .header {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
   .projects {
     width: calc((100% - 4em) / 3);
     padding: 0 0 2em 0;

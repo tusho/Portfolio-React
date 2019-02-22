@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import MyWebsites from './MyWebsites'
-import MyApps from './MyApps'
+import MyWebsites from '../projects/MyWebsites'
+import MyApps from '../projects/MyApps'
 import './App.css'
-import logo from './img/logo.png'
-import heroSmall from './img/desksmall.jpg'
-import heroLarge from './img/desklarge.jpg'
+import logo from '../../img/logo.png'
+import heroSmall from '../../img/desksmall.jpg'
+import heroLarge from '../../img/desklarge.jpg'
 
 class App extends Component {
   render() {
