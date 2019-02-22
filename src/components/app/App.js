@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import MyWebsites from '../projects/MyWebsites'
-import MyApps from '../projects/MyApps'
+import Work from '../projects/Work'
 import './App.css'
 import logo from '../../img/logo.png'
 import heroSmall from '../../img/desksmall.jpg'
 import heroLarge from '../../img/desklarge.jpg'
 
 class App extends Component {
+
   render() {
     return (
       <div className="app">
@@ -24,8 +24,7 @@ class App extends Component {
           <img src={heroSmall} className="hero_image_small" alt="desk-image-small" />
           <img src={heroLarge} className="hero_image_large" alt="desk-image-large" />
         </div>
-        <MyWebsites />
-        <MyApps />
+        <Work />
         <div className="footer">
           <a href="https://www.linkedin.com/in/kuhestani" target="_blank" className="footer-link">
             <h3>Linkedin</h3>
