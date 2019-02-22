@@ -38,11 +38,11 @@ class Work extends Component {
         <div className="work">
             <h2 className="work_header">My Websites<hr className="project_divider"/></h2>
             {websiteData.map(website => (
-            <Projects website={website} mouseHover={this.handleMouseHover} toggleHover={this.toggleHoverState}/>
+                this.state.isHovering == false ? <Projects website={website} mouseHover={this.handleMouseHover}/> : <div><p>Test</p></div>
             ))}
             <h2 className="work_header">My Apps<hr className="project_divider"/></h2>
             {appData.map(website => (
-            <Projects website={website} mouseHover={this.handleMouseHover} toggleHover={this.toggleHoverState}/>
+                this.state.isHovering == false ? <Projects website={website} mouseHover={this.handleMouseHover}/> : <div><p>Test</p></div>
             ))}
         </div>
     )
