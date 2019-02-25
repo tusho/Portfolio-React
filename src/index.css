@@ -173,6 +173,68 @@ p {
   }
 }
 
+
+/* Overlay Styling */
+
+.project_container {
+  position: relative;
+}
+
+.project_container:hover {
+  cursor: pointer;
+}
+
+.project_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project_overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s ease;
+  text-shadow: 1px 2px #000;
+  background: rgba(2,179,228, 0.5);
+}
+
+
+.project_container:hover .project_overlay {
+  opacity: 1;
+}
+
+.project_container:hover {
+  overflow: hidden;
+}
+
+.project_container:hover .project_image {
+  filter: blur(5px);
+}
+
+.project_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project_stack {
+  color: white;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+
+
 /* Code to add responsiveness */
 
 @media screen and (max-width: 580px) {
@@ -210,6 +272,13 @@ p {
   .project_name {
     font-size: 16px;
     font-weight: 400;
+  }
+
+  .project_stack {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
   }
 
 }
@@ -282,7 +351,7 @@ p {
     display: block;
   }
 
-  .projects:first-of-type, .projects:nth-of-type(4) {
+  .projects:first-of-type, .projects:nth-of-type(4), .projects:nth-of-type(6) {
     margin-right: 2em;
   }
 

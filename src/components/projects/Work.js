@@ -14,7 +14,8 @@ class Work extends Component {
 
         toggleHoverState(state) {
         return {
-            isHovering: !state.isHovering,
+            isHovering: false,
+            // isHovering: !state.isHovering,
         };
         }
 
