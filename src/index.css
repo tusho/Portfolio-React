@@ -235,6 +235,21 @@ p {
   line-height: 1.8em;
 }
 
+/* Search Input Field */
+
+.search-bar {
+  padding: 8px 1em 2px 1em;
+  border: 1px solid grey;
+  margin: 2em 2em 1em;
+}
+
+.search-bar input {
+  width: 100%;
+  padding-bottom: 8px;
+  font-size: 1.25em;
+  outline: none;
+  border: none;
+}
 
 /* Code to add responsiveness */
 

@@ -7,6 +7,19 @@ import heroLarge from '../../img/desklarge.jpg'
 
 class App extends Component {
 
+  state = {
+    query: '',
+    projects: ''
+  }
+
+  newQuery = (query) => {
+    this.setState({ query: query })
+  }
+
+  search = (query) => {
+    this.newQuery(query)
+  }
+
   render() {
     return (
       <div className="app">
@@ -23,6 +36,14 @@ class App extends Component {
         <div className="hero">
           <img src={heroSmall} className="hero_image_small" alt="desk-image-small" />
           <img src={heroLarge} className="hero_image_large" alt="desk-image-large" />
+        </div>
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder="Search by tech stack (eg. 'React')"
+            value = {this.search.query}
+            onChange={(e) => this.search(e.target.value)}
+          />
         </div>
         <Work />
         <div className="footer">
