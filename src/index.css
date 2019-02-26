@@ -15,7 +15,7 @@ body {
 
 /* Code for the Header */
 
-.header, .hero, .work {
+.header, .hero, .work_container {
   box-sizing: border-box;
 }
 
@@ -66,7 +66,7 @@ hr {
 
 /* Code for the Work Portfolio */
 
-.work {
+.work_container {
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
@@ -178,6 +178,7 @@ p {
 
 .project_container {
   position: relative;
+  margin-bottom: 5px;
 }
 
 .project_container:hover {
@@ -261,12 +262,8 @@ p {
     padding: 0 0 0.2em 1.55em;
   }
 
-  .projects:first-of-type {
+  .projects {
     margin-bottom: 1em;
-  }
-
-  .projects:last-of-type {
-    margin-top: 1em;
   }
 
   .project_name {
@@ -313,8 +310,18 @@ p {
     font-weight: 200;
   }
 
-  .work {
+  .work_container {
     padding: 8px 2em 2px 2em;
+    justify-content: space-between;
+  }
+
+  .work_container:after {
+    content: "";
+    flex: auto;
+  }
+
+  .work_container.apps .projects:last-of-type {
+    margin-left: 2em;
   }
 
   .work_header {
@@ -322,17 +329,9 @@ p {
   }
 
   .projects {
-    width: calc((100% - 2em) / 3);
+    width: calc((100% - 2em) / 2);
     padding: 0 0 1em 0;
     }
-
-  .projects:first-of-type, .projects:nth-of-type(4) {
-    margin-right: 1em;
-  }
-
-  .projects:nth-of-type(3) {
-    margin-left: 1em;
-  }
 
 }
 
@@ -351,12 +350,12 @@ p {
     display: block;
   }
 
-  .projects:first-of-type, .projects:nth-of-type(4), .projects:nth-of-type(6) {
-    margin-right: 2em;
+  .work_container.websites .projects:last-of-type {
+    margin-left: 2em;
   }
 
-  .projects:nth-of-type(3) {
-    margin-left: 2em;
+  .work_container.apps .projects:last-of-type {
+    margin-left: 0;
   }
 
 }
