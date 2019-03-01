@@ -4,12 +4,18 @@ import './App.css'
 import logo from '../../img/logo.png'
 import heroSmall from '../../img/desksmall.jpg'
 import heroLarge from '../../img/desklarge.jpg'
+import sortBy from 'sort-by'
+import { projectData } from '../projects/projectData'
 
 class App extends Component {
 
-  state = {
-    query: '',
-    projects: ''
+  constructor(props) {
+    super(props);
+    this.state = {
+      query: '',
+      projects: '',
+      displayedProjects: projectData.sort(sortBy('name'))
+    };
   }
 
   newQuery = (query) => {
@@ -18,9 +24,16 @@ class App extends Component {
 
   search = (query) => {
     this.newQuery(query)
+    if (query.length !== 0) {
+      const filteredProjects = projectData.filter(project => project.stack.toString().toLowerCase().includes(query))
+      this.setState({ displayedProjects : filteredProjects })
+    } else {
+        this.setState({ displayedProjects: projectData })
+    }
   }
 
   render() {
+    
     return (
       <div className="app">
         <div className="header">
@@ -45,7 +58,7 @@ class App extends Component {
             onChange={(e) => this.search(e.target.value)}
           />
         </div>
-        <Work />
+        <Work projectData={this.state.displayedProjects}/>
         <div className="footer">
           <a href="https://www.linkedin.com/in/kuhestani" target="_blank" className="footer-link">
             <h3>Linkedin</h3>

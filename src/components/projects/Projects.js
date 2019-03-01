@@ -5,7 +5,7 @@ class Projects extends Component {
   render() {
     const {website} = this.props
     const websiteStack = website.stack.sort().map(stack => 
-      <p class="project_stack">{stack}</p>
+      <p className="project_stack">{stack}</p>
     )
 
     return (
