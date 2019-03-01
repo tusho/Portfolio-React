@@ -47,8 +47,8 @@ class App extends Component {
         </div>
         <hr />
         <div className="hero">
-          <img src={heroSmall} className="hero_image_small" alt="desk-image-small" />
-          <img src={heroLarge} className="hero_image_large" alt="desk-image-large" />
+          <img src={heroSmall} className="hero_image_small" alt="small desk" />
+          <img src={heroLarge} className="hero_image_large" alt="large desk" />
         </div>
         <div className="search-bar">
           <input
@@ -60,13 +60,13 @@ class App extends Component {
         </div>
         <Work projectData={this.state.displayedProjects}/>
         <div className="footer">
-          <a href="https://www.linkedin.com/in/kuhestani" target="_blank" className="footer-link">
+          <a href="https://www.linkedin.com/in/kuhestani" target="_blank" rel="noopener noreferrer" className="footer-link">
             <h3>Linkedin</h3>
           </a>
-          <a href="https://www.github.com/tusho" target="_blank" className="footer-link">
+          <a href="https://www.github.com/tusho" target="_blank" rel="noopener noreferrer" className="footer-link">
             <h3>Github</h3>
           </a>
-          <a href="mailto:armin.kuhestani@gmail.com" target="_blank" className="footer-link">
+          <a href="mailto:armin.kuhestani@gmail.com" target="_blank" rel="noopener noreferrer" className="footer-link">
             <h3>Contact</h3>
           </a>
           <a href="#top" className="footer-link">

@@ -22,16 +22,16 @@ class Work extends Component {
 
     return (
         <div className="work">
-            <div class="work_container websites">
+            <div className="work_container websites">
                 <h2 className="work_header">My Websites<hr className="project_divider"/></h2>
                 {this.props.projectData.filter(project => project.type === 'website').map(website => (
-                    this.state.isHovering === false ? <Projects website={website} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
+                    this.state.isHovering === false ? <Projects website={website} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
                 ))}
             </div>
-            <div class="work_container apps">
+            <div className="work_container apps">
                 <h2 className="work_header">My Apps<hr className="project_divider"/></h2>
                 {this.props.projectData.filter(project => project.type === 'app').map(website => (
-                    this.state.isHovering === false ? <Projects website={website} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
+                    this.state.isHovering === false ? <Projects website={website} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
                 ))}
             </div>
         </div>
