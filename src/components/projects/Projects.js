@@ -9,7 +9,7 @@ class Projects extends Component {
     )
 
     return (
-      <section className="projects" key={website.name} onMouseEnter={this.props.mouseHover} onMouseLeave={this.props.mouseHover}>
+      <section className="projects" style={this.props.projectStyle} key={website.name} onMouseEnter={this.props.mouseHover} onMouseLeave={this.props.mouseHover}>
         <div target="_blank" className="project_container" onClick={()=> window.open(website.websiteURL, "_blank")}>
           <img src={require(`../../img/${website.image}.jpg`)} className="project_image" alt={website.name}/>
           <div className="project_overlay">

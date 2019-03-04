@@ -11,7 +11,7 @@ export const projectData =  [
         image: 'json', 
         name: 'JSON Capital',
         type: 'website',
-        stack: ['JavaScript', 'ReactJS', 'HTML', 'CSS']
+        stack: ['JavaScript', 'ReactJS', 'HTML', 'CSS', 'Truffle']
     },
     { 
         websiteURL: 'https://inatureskincare.com',

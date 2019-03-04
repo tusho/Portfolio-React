@@ -53,7 +53,7 @@ class App extends Component {
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Search by tech stack (eg. 'React')"
+            placeholder="Search by tech stack (eg. 'React', 'Truffle', 'Liquid')"
             value = {this.search.query}
             onChange={(e) => this.search(e.target.value)}
           />
