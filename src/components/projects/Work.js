@@ -32,7 +32,7 @@ class Work extends Component {
   render() {
       
     const projectStyle = {
-        // 'margin-left': '2em'
+        'margin-left': '4em'
     };
 
     return (
@@ -40,13 +40,13 @@ class Work extends Component {
             <div className="work_container websites">
                 <h2 className="work_header">My Websites<hr className="project_divider"/></h2>
                 {this.props.projectData.filter(project => project.type === 'website').map(website => (
-                    this.state.isHovering === false ? <Projects inputStyle={projectStyle} website={website} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
+                    this.state.isHovering === false ? <Projects style={projectStyle} website={website} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
                 ))}
             </div>
             <div className="work_container apps">
-                <h2 className="work_header">My Apps<hr className="project_divider"/></h2>
+            <h2 className="work_header">My Apps<hr className="project_divider"/></h2>
                 {this.props.projectData.filter(project => project.type === 'app').map(website => (
-                    this.state.isHovering === false ? <Projects website={website} inputStyle={projectStyle} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
+                    this.state.isHovering === false ? <Projects website={website} style={projectStyle} key={website.name} mouseHover={this.handleMouseHover}/> : <div><p>{website.stack}</p></div>
                 ))}
             </div>
         </div>

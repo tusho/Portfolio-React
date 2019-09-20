@@ -62,4 +62,18 @@ export const projectData =  [
         type: 'app',
         stack: ['React', 'JavaScript', 'HTML', 'CSS']
     },
+    { 
+        websiteURL: 'https://would-you-rather-tusho.herokuapp.com',
+        image: 'would-you-rather',
+        name: 'Would you Rather?',
+        type: 'app',
+        stack: ['React', 'Redux', 'JavaScript', 'HTML', 'CSS']
+    },
+    { 
+        websiteURL: 'https://github.com/tusho/Flashcard-Maker',
+        image: 'flashcard-maker',
+        name: 'Flashcard Maker',
+        type: 'app',
+        stack: ['React Native', 'Redux', 'JavaScript', 'HTML', 'CSS']
+    },
 ];
